@@ -1,10 +1,22 @@
 import React from 'react'
 class Results extends React.Component {
 	render() {
-		return (<div className="results">
+		return (
+			<>
+			<nav class="wrap-results">
+      <img src="images/google.png" class="logo-results" />
+      <form class="header-results">
+        <input type="search" />
+        <button type="submit">
+          Search
+        </button>
+      </form>
+    </nav>
+    <div class="results">
       <small>37 Results</small>
       <small>www.w3school.com</small>
     </div>
+			<div>
     <section>
       <a href="#" target="_blank" className="result-title"
         ><h1>JavaScript Tutorial - W3School</h1></a
@@ -53,6 +65,10 @@ class Results extends React.Component {
         <li><a href="#" target="_blank">JavaScript Online</a></li>
         <li><a href="#" target="_blank">JavaScript Definition</a></li>
       </ul>
-    </section>)
+    </section>
+	</div>
+	</>
+   )
 	}
 }
+export default Results
