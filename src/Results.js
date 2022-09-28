@@ -12,7 +12,7 @@ class Results extends React.Component {
 			url: 'www.apple.com',
 			title: 'Apple iPhone',
 			description: 'Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java',
-			links: ['JavaScript Introduction', 'JS Functions', 'JavaScript Examples']
+			links: ['ipad', 'imac', 'macbook']
 		}]
 	}
 	render() {
@@ -31,7 +31,9 @@ class Results extends React.Component {
     <small>37 Results</small>
     </div>
     {this.state.results.map((result, i) => { return <Result key={i} result={result}/>})}
-		
+
+
+
 
 	</>)
 }}
