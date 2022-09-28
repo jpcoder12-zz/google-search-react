@@ -7,6 +7,12 @@ class Results extends React.Component {
 			title: 'JavaScript Tutorial',
 			description: 'Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java',
 			links: ['JavaScript Introduction', 'JS Functions', 'JavaScript Examples']
+		},
+    {
+			url: 'www.apple.com',
+			title: 'Apple iPhone',
+			description: 'Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java',
+			links: ['JavaScript Introduction', 'JS Functions', 'JavaScript Examples']
 		}]
 	}
 	render() {
@@ -24,8 +30,8 @@ class Results extends React.Component {
    <div className="results">
     <small>37 Results</small>
     </div>
-
-		<Result />
+    {this.state.results.map((result, i) => { return <Result key={i} result={result}/>})}
+		
 
 	</>)
 }}
