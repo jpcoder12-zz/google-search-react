@@ -1,9 +1,6 @@
 import React from 'react'
 import Result from './Result'
 class Results extends React.Component {
-	state = {
-		results: []
-	}
 	render() {
 		return (
 			<>

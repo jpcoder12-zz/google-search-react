@@ -27,8 +27,13 @@ class App extends React.Component {
 
     render(){
         return (
-            <Results getResults={this.getResultsFromSearch} modifySearch={this.modifySearch}/>
+					<>
+				 {this.state.submitted == true ?	<Results getResults={this.getResultsFromSearch}  modifySearch={this.modifySearch}/> :
 
+
+
+						<Search getResults={this.getResultsFromSearch} modifySearch={this.modifySearch}/>}
+					</>
         )
     }
 }
