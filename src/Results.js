@@ -11,7 +11,7 @@ class Results extends React.Component {
     {
 			url: 'www.apple.com',
 			title: 'Apple iPhone',
-			description: 'Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java',
+			description: 'better than microsoft',
 			links: ['ipad', 'imac', 'macbook']
 		}]
 	}
