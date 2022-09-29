@@ -12,7 +12,7 @@ class App extends React.Component {
         //str is the search input
         console.log(e)
         e.preventDefault()
-        let results = await axios.get('http://localhost:3000/results', {
+        let results = await axios.get(process.env.REACT_APP_GOOGLE_SEARCH_API + '/results', {
             params: {
                 search: e.target.input.value
             }
@@ -28,7 +28,7 @@ class App extends React.Component {
     render(){
         return (
             <Results getResults={this.getResultsFromSearch} modifySearch={this.modifySearch}/>
-            
+
         )
     }
 }
