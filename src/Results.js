@@ -17,10 +17,6 @@ class Results extends React.Component {
     <small>37 Results</small>
     </div>
     {this.state.results.map((result, i) => { return <Result key={i} result={result}/>})}
-
-
-
-
 	</>)
 }}
 export default Results

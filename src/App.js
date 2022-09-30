@@ -10,13 +10,18 @@ class App extends React.Component {
     }
     getResultsFromSearch = async(e) => {
         //str is the search input
-        console.log(e)
+
         e.preventDefault()
-        let results = await axios.get(process.env.REACT_APP_GOOGLE_SEARCH_API + '/results', {
+				// let str = process.env.REACT_APP_GOOGLE_SEARCH_API + '/results'
+				let str = 'http://localhost:3000/results'
+				console.log(str);
+        let results = await axios.get(str, {
             params: {
-                search: e.target.input.value
+                search: this.state.search
             }
         })
+
+				console.log(results)
     }
     modifySearch = (e) => {
         this.setState({
